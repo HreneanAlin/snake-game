@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Snake Game</title>
+    <link rel="stylesheet" href="../StyleHeader.css">
+    <link rel="stylesheet" href="../StyleFooter.css">
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="game.js" defer type="module"></script>
+</head>
+<body>
+<header>
+
+
+</header>
+<main>
+    <div class="score">
+        score
+        <span id="score"></span>
+    </div>
+    <div id="game-board"></div>
+    <div class="game-menu">
+        <h1>The Snake Game</h1>
+        <div>
+            <p class="dif-level">Difficulty Level:</p>
+            <select id="dif-level" name="difficulty">
+                <option value="3">Easy</option>
+                <option value="5" selected="selected">Normal</option>
+                <option value="10">Hard</option>
+                <option value="50">Impossible</option>
+            </select>
+        </div>
+
+        <button id="btn-start" class="btn-start">Start Game</button>
+        <div class="instruction-container">
+            <h2 class="instruction-title">Instructions:</h2>
+            <div class="food-ex"></div>
+            <p class="instruction-content">Gives 1p</p>
+            <div class="special-food-ex"></div>
+            <p class="instruction-content">Gives 3p</p>
+            <div class="poison-food-ex"></div>
+            <p class="instruction-content">Instant Kill</p>
+            <p>Controls:</p>
+            <p>Move: Arrows, Pause:P</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <hr>
+    <p>
+        &copy; 2020 HreneanAlin, Inc &nbsp;
+        <a href="http://validator.w3.org/check?uri=referer"><img
+                src="https://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31"
+                width="88"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="CSS valid!"/>
+        </a>
+    </p>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+
+<script
+        src="https://code.jquery.com/color/jquery.color-2.2.0.js"
+        integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg="
+        crossorigin="anonymous"></script>
+<script src="dynamicHeaderS.js"></script>
+</body>
+</html>
